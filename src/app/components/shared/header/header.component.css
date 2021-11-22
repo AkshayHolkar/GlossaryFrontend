@@ -1,0 +1,24 @@
+.header {
+    padding: 10px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 30px;
+    width: 100%;
+}
+
+.home-but {
+    background-color: white; 
+    color: green;
+    font-weight: bold; 
+    border: 2px solid green;
+    padding: 10px 20px;
+    margin: 5px;
+    right: 37%;
+    position: relative;
+}
+
+.home-but:hover {
+    background-color: green;
+    color: white;
+}

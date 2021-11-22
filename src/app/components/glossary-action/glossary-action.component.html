@@ -1,0 +1,21 @@
+<h3 *ngIf="isEditTerm else newBlock">Edit Glossary</h3>
+<ng-template #newBlock>
+    <h3>Add New Glossary</h3>
+</ng-template>
+<div class="container">
+    <form [formGroup]="glossaryForm" (submit)="onSubmit()">
+        <div>
+            <label for="term">Term*</label>
+            <input type="text" formControlName="term" placeholder="Term">
+            <span *ngIf="glossaryForm.get('term')?.errors?.['required'] && glossaryForm.get('term')?.touched"
+                class="error">Term is required</span>
+        </div>
+        <div>
+            <label for="definition">Definition*</label>
+            <textarea type="text" formControlName="definition" placeholder="Definition"></textarea>
+            <span *ngIf="glossaryForm.get('definition')?.errors?.['required'] && glossaryForm.get('definition')?.touched"
+                class="error">Definition is required</span>
+        </div>
+        <button type="submit" [disabled]="glossaryForm.invalid">Save</button>
+    </form>
+</div>

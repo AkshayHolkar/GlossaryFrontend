@@ -1,0 +1,69 @@
+h1{
+    margin-left: 10%;
+}
+
+#glossary-table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+#glossary-table td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+  
+#glossary-table tr:nth-child(even){background-color: #f2f2f2;}
+  
+#glossary-table tr:hover {background-color: #ddd;}
+  
+#glossary-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}
+
+.term-col {
+    width: 20%;
+}
+
+.definition-col{
+    width: 70%;
+}
+
+.action-col {
+    width: 10%;
+}
+
+.detail-but {
+    background-color: white; 
+    color: black; 
+    border: 2px solid skyblue;
+    padding: 10px 20px;
+    margin: auto;
+}
+
+.detail-but:hover {
+    background-color: skyblue;
+    color: white;
+}
+
+.add-but {
+    background-color: white; 
+    color: black; 
+    border: 2px solid green;
+    padding: 10px 20px;
+    margin: 5px;
+    position: absolute;
+    right: 10%;
+    top: 27%;
+}
+
+.add-but:hover {
+    background-color: green;
+    color: white;
+}

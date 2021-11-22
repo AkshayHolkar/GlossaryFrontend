@@ -1,0 +1,17 @@
+<h1>Glossary Detail</h1>
+
+<table id="glossary-table">
+  <tr>
+    <th>Term</th>
+    <td>{{glossaryDetail.term}}</td>
+  </tr>
+  <tr class="Definition-tr">
+    <th>Definition</th>
+    <td>{{glossaryDetail.definition}}</td>
+  </tr>
+</table>
+<div class="button-container">
+    <button class="button delete-but" (click)="deleteGlossary()">Delete</button>
+    <button class="button edit-but" (click)="glossaryEdit(glossaryDetail)">Edit</button>
+    <button class="button back-but" (click)="backClicked()">Back</button>
+</div>

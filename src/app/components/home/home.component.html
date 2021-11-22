@@ -1,0 +1,22 @@
+<div>
+    <h1>A Glossary Table</h1>
+    <button class="add-but" routerLink="add">Add Glossary</button>
+</div>
+<div>
+    <table id="glossary-table">
+        <tr>
+            <th class="term-col">Term</th>
+            <th class="definition-col">Definition</th>
+            <th class="action-col">Action</th>
+        </tr>
+        <tr *ngFor="let glossary of glossaries">
+            <td>{{glossary.term}}</td>
+            <td>
+                <p>{{(glossary.definition.length>90)? (glossary.definition |
+                    slice:0:90)+'...':(glossary.definition)}}</p>
+            </td>
+            <td><button id="detail" class="detail-but" (click)="glossaryDetail(glossary)">Detail</button>
+            </td>
+        </tr>
+    </table>
+</div>
